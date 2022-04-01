@@ -23,3 +23,7 @@ test('Expect displayWeather to be invoked', () => {
   expect(m.displayMapFromQuery).toHaveBeenCalled();
 })
 
+test('Does it given lat and lng', () =>{
+  const place = "Langara";
+  expect(location(place)).toBe(49.2247693,-123.1107383);
+})
